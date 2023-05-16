@@ -1,0 +1,72 @@
+ANOTAÇÃO:let(Variável), Const(Constante=Variavel de numero fixo),Console.log()=escrever no console,toFixed()=Limitia as casas decimais.
+
+Codigo do 1 Desafio do Combustivel
+
+const Gasolina = 5.65;
+let Distancia = 2223.5;
+let gastoKM = 15;
+let resultado;
+
+console.log('Olá Daniella vamos calcular o quanto você gastou em sua viagem para o Rio Grande do Norte');
+console.log(
+
+);
+console.log('Segundo as informações do sistema, o preço do litro gasolina é de R$5.65, o seu carro gasta em média 15L por KM rodado, e a distância é de 2.223,5KM.');
+
+resultado = (Distancia/gastoKM)*Gasolina;
+console.log(
+
+);
+
+console.log('A quantia em reais que você gastou na sua viagem até o Rio Grande do Norte é em média: R$',resultado.toFixed(2));
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ANOTAÇÃO: O operador condicional "%" é o resto da divisão.
+
+Ex: 5 % 2 = 1, Pois o resto da divisão é 1(2*2=4 ; 5-4=1).
+
+É possivel usar um if seguido de um Else para ser um comando de código só. se n ele continua executando o proximo "if".
+
+Ex: const numero = x
+    const numerodivisivelpor5 = y
+
+    if(numero===0) {
+    console.log('O numero é inválido');
+    } Else if(numerodivisivelpor5) {
+    console.log('Sim');
+    } Else {
+    console.log('Não');
+    }
+
+A condicional "==" é utilizada parar comparar com strings também, já a condicional === é apenas para numeros.
+
+Codigo do 2 Desafio(Incremento do de Combustivel)
+
+const Gasolina = 5.65;
+const Etanol = 3.98;
+var type = 'Etanol'
+let Distancia = 2223.5;
+let gastoKM = 10;
+let resultado;
+
+if(type=='Etanol'){
+    resultado = (Distancia/gastoKM)*Etanol
+} else if(type=='Gasolina'){
+    resultado = (Distancia/gastoKM)*Gasolina
+}
+
+
+console.log('Olá Daniella vamos calcular o quanto você gastou em sua viagem para o Rio Grande do Norte');
+console.log(
+
+);
+console.log('Segundo as informações do sistema, o seu carro está atualmente com Etanol no tanque de combustíve,');
+console.log('o preço do litro Etanol é de R$3.98, o seu carro gasta em média 10L por KM rodado, e a distância é de 2.223,5KM')
+console.log(
+
+);
+console.log('A quantia em reais que você gastou na sua viagem até o Rio Grande do Norte é em média: R$',resultado.toFixed(2));
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

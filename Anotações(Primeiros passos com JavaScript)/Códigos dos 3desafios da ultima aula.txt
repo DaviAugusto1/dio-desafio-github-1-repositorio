@@ -1,0 +1,62 @@
+Link do material de apoio: https://github.com/digitalinnovationone/javascript-developer-m1
+====================================================================================================
+Códigos:
+
+Desafio 3(preço):
+
+const Valordoproduto = 237.65;
+let parcela = 3;
+let metodo = parcela;
+let preçofinal;
+
+if(metodo=='débito'){
+    preçofinal = Valordoproduto-(Valordoproduto* 0.1)
+    console.log('O preço total a pagar com 10% de desconto é:',preçofinal.toFixed(2))
+} else if(metodo=='dinheiro/pix'){
+    preçofinal = Valordoproduto-(Valordoproduto* 0.15)
+    console.log('O preço total a pagar com 15% de desconto é:',preçofinal.toFixed(2))
+} else if(metodo==parcela && parcela<=2){
+    preçofinal = Valordoproduto/parcela
+    console.log('O preço a se pagar em cada parcela é:', preçofinal.toFixed(2))
+} else if(metodo==parcela && parcela>=3){
+    preçofinal = (Valordoproduto*1.10)/parcela
+    console.log('preço a se pagar em cada parcela com 10% de juros é:', preçofinal.toFixed(2))
+}
+====================================================================================================
+Desafio 2(IMC):
+
+const peso = 48;
+const altura = 1.56;
+let IMC = peso/(altura**2)
+
+if(IMC<18.5){
+    console.log('Você está abaixo do peso')
+} else if(IMC>=18.5 && IMC<25){
+    console.log('Você está com o peso normal')
+} else if(IMC>=25 && IMC<30){
+    console.log('Você está acima do peso normal')
+} else if(IMC>=30 && IMC<=40){
+    console.log('Você está Obeso')
+} else{
+    console.log('Você está com Obesidade Grave')
+}
+====================================================================================================
+Desafio 1(Média da nota):
+
+const nota1 = 6;  
+const nota2 = 6.5;
+const nota3 = 8;
+let media;
+
+media =(nota1 + nota2 + nota3)/3;
+
+if(media>7){
+    console.log('Parabéns você passou de semestre, sua nota aual é de:', media.toFixed(1))
+} else if(media>=5){
+    console.log('Precisa se esforçar só um pouquinho mais, você está de recuperação, a média é 8 e a sua média atual é de:',media.toFixed(1))
+} else if(media<5){
+    console.log('Infelizmente você reprovou, para ficar de recuperação e ter uma segunda chance é necessário pelo menos 5 na média e a sua é:', media.toFixed(1))
+}
+====================================================================================================
+
+
